@@ -27,6 +27,29 @@ module "this" {
 No issue is creating limit on this module.
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+## Requirements
+
+No requirements.
+
+## Providers
+
+No provider.
+
+## Inputs
+
+| Name | Description | Type | Default | Required |
+|------|-------------|------|---------|:--------:|
+| create\_dns | Boolean to enable DNS record creation | `bool` | `false` | no |
+| host\_fqdn | Fully qualified domain name for the telemetry server | `string` | `""` | no |
+| name | A unique id for the deployment | `string` | `""` | no |
+| private\_key\_path | Path to private key | `string` | `""` | no |
+| public\_key\_path | Path to public key | `string` | `""` | no |
+| subnet\_id | ID for the subnet to deploy into | `string` | `null` | no |
+| vpc\_id | ID for the VPC to deploy into | `string` | `null` | no |
+
+## Outputs
+
+No output.
 
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 

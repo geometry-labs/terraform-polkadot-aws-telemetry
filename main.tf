@@ -1,0 +1,16 @@
+module "ansible-docker" {
+  source = "github.com/insight-infrastructure/terraform-aws-ansible-docker-compose"
+
+  name = var.name
+
+  private_key_path = var.private_key_path
+  public_key_path  = var.public_key_path
+
+  additional_roles = ["insight_w3f.substrate_telemetry"]
+
+  create_dns = var.create_dns
+  hostname   = var.host_fqdn
+  open_ports = [3000, 8000]
+  subnet_id  = var.subnet_id
+  vpc_id     = var.vpc_id
+}
