@@ -81,7 +81,7 @@ func configureTerraformOptions(t *testing.T, exampleFolder string) (*terraform.O
 
 func testEndpoint(t *testing.T, terraformOptions *terraform.Options) {
 
-	endpointIP := terraform.Output(t, terraformOptions, "dns_name")
+	endpointIP := terraform.Output(t, terraformOptions, "endpoint_ip")
 
 	expectedStatus := "200"
 	url := fmt.Sprintf("http://%s:3000", endpointIP)

@@ -49,7 +49,9 @@ No provider.
 
 ## Outputs
 
-No output.
+| Name | Description |
+|------|-------------|
+| endpoint\_ip | n/a |
 
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
