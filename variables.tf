@@ -10,12 +10,6 @@ variable "public_key_path" {
   default     = ""
 }
 
-variable "host_fqdn" {
-  description = "Fully qualified domain name for the telemetry server"
-  type        = string
-  default     = ""
-}
-
 variable "subnet_id" {
   description = "ID for the subnet to deploy into"
   type        = string
@@ -32,6 +26,12 @@ variable "create_dns" {
   description = "Boolean to enable DNS record creation"
   type        = bool
   default     = false
+}
+
+variable "host_name" {
+  description = "Hostname for server (i.e. \"telemetry\")"
+  type        = string
+  default     = "telemetry"
 }
 
 variable "domain_name" {
