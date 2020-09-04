@@ -34,6 +34,12 @@ variable "create_dns" {
   default     = false
 }
 
+variable "domain_name" {
+  description = "Root domain name for deployment (as is present in Route53)"
+  type        = string
+  default     = ""
+}
+
 variable "name" {
   description = "A unique id for the deployment"
   type        = string

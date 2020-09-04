@@ -40,6 +40,7 @@ No provider.
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | create\_dns | Boolean to enable DNS record creation | `bool` | `false` | no |
+| domain\_name | Root domain name for deployment (as is present in Route53) | `string` | `""` | no |
 | host\_fqdn | Fully qualified domain name for the telemetry server | `string` | `""` | no |
 | name | A unique id for the deployment | `string` | `""` | no |
 | private\_key\_path | Path to private key | `string` | `""` | no |

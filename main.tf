@@ -8,9 +8,10 @@ module "ansible-docker" {
 
   additional_roles = ["insight_w3f.substrate_telemetry"]
 
-  create_dns = var.create_dns
-  hostname   = var.host_fqdn
-  open_ports = [3000, 8000]
-  subnet_id  = var.subnet_id
-  vpc_id     = var.vpc_id
+  create_dns  = var.create_dns
+  hostname    = var.host_fqdn
+  domain_name = var.domain_name
+  open_ports  = [3000, 8000]
+  subnet_id   = var.subnet_id
+  vpc_id      = var.vpc_id
 }
