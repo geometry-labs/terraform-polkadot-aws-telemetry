@@ -3,9 +3,8 @@
 [![open-issues](https://img.shields.io/github/issues-raw/insight-w3f/terraform-polkadot-aws-telemetry?style=for-the-badge)](https://github.com/insight-w3f/terraform-polkadot-aws-telemetry/issues)
 [![open-pr](https://img.shields.io/github/issues-pr-raw/insight-w3f/terraform-polkadot-aws-telemetry?style=for-the-badge)](https://github.com/insight-w3f/terraform-polkadot-aws-telemetry/pulls)
 
-## Features
-
-This module...
+This module deploys a [Substrate telemetry server](https://github.com/paritytech/substrate-telemetry) for use in your Substrate/Polkadot deployment.
+You only require one server per deployment.
 
 ## Terraform Versions
 
@@ -22,9 +21,6 @@ module "this" {
 ## Examples
 
 - [defaults](https://github.com/insight-w3f/terraform-polkadot-aws-telemetry/tree/master/examples/defaults)
-
-## Known  Issues
-No issue is creating limit on this module.
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
