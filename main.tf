@@ -6,7 +6,7 @@ module "ansible-docker" {
   private_key_path = var.private_key_path
   public_key_path  = var.public_key_path
 
-  additional_roles = ["insight_w3f.substrate_telemetry"]
+  additional_roles = ["geometrylabs.substrate_telemetry"]
 
   create_dns    = var.create_dns
   hostname      = var.host_name
