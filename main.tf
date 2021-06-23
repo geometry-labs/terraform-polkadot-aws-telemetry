@@ -12,7 +12,7 @@ module "ansible-docker" {
   hostname      = var.host_name
   domain_name   = var.domain_name
   playbook_vars = { "host_fqdn" : "${var.host_name}.${var.domain_name}" }
-  open_ports    = [3000, 8000]
+  open_ports    = [80, 8000]
   subnet_id     = var.subnet_id
   vpc_id        = var.vpc_id
 }
