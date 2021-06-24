@@ -1,5 +1,5 @@
 module "ansible-docker" {
-  source = "github.com/insight-infrastructure/terraform-aws-ansible-docker-compose"
+  source = "github.com/geometry-labs/terraform-aws-ansible-docker-compose"
 
   name = var.name
 
