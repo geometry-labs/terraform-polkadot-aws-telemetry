@@ -84,7 +84,7 @@ func testEndpoint(t *testing.T, terraformOptions *terraform.Options) {
 	endpointIP := terraform.Output(t, terraformOptions, "endpoint_ip")
 
 	expectedStatus := "200"
-	url := fmt.Sprintf("http://%s:3000", endpointIP)
+	url := fmt.Sprintf("http://%s:80", endpointIP)
 
 	description := fmt.Sprintf("curl to LB %s with error command", endpointIP)
 	maxRetries := 60
